@@ -44,6 +44,7 @@ ul{
 
 
 
+
 /*Typography*/
 
 
@@ -75,7 +76,12 @@ nav li{
 nav a{
 	font-weight: 700;
 	text-decoration: none;
-	color: #27282b;
+	color: #FFF;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 nav a:focus,
@@ -282,7 +288,6 @@ nav a:hover {
 
 
 .icons{
-	display: flex;
 	flex-wrap: wrap;
     justify-content: center;
 }
@@ -304,10 +309,6 @@ nav a:hover {
 	margin-top: 7.7em;
 	transform: rotate(-3.1deg);
 }
-
-/*.sidebox-container{
-	display: flex;
-}*/
 
 @media(max-width: 1240px){
 	.about-mainbox{
@@ -413,15 +414,16 @@ nav a:hover {
 	text-align: center;
 	flex-direction: column;
 	background-color: rgba(25, 25, 25, 0.8);
--webkit-clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
-clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
-	transform: translateX(-100%);
+	-webkit-clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
+	clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
+	/*transform: translateX(-100%);*/
 }
 
 .port-desc-l img{
     position: absolute;
     transform: rotate(90deg);
     right: 6.5%;
+    bottom: 33%;
     width: 53%;
     max-width: 46%;
 }
@@ -437,6 +439,12 @@ clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
     right: 40%;
     flex-direction: column;
     padding: 1em;
+}
+
+.port-desc-r .button{
+	position: absolute;
+    right: 15%;
+    top: 70%;
 }
 
 
@@ -456,7 +464,7 @@ clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
 	background-color: rgba(25, 25, 25, 0.8);
     -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 0, 100% 100%, 40% 80%, 40% 100%, 0% 50%);
     clip-path: polygon(40% 0%, 40% 20%, 100% 0, 100% 100%, 40% 80%, 40% 100%, 0% 50%);
-    transform: translateX(100%);
+    /*transform: translateX(100%);*/
 }
 
 
@@ -465,10 +473,11 @@ clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
 	transition: all ease-in-out 600ms;
 }
 
-.port-desc-r img{
+.port-desc-r a img{
     position: absolute;
     transform: rotate(-90deg);
     right: 47.5%;
+    bottom: 33%;
     width: 53%;
     max-width: 46%;
 }
@@ -481,6 +490,48 @@ clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
     padding: 1em;
 }
 
+@media(max-width:1200px){
+	.r-text,
+	.l-text{
+		padding: 1.5em;
+    	font-size: .8em;
+	}
+}
+
+@media(max-width: 950px){
+	.r-text,
+	.l-text{
+		padding: 1em;
+		font-size: .6em;
+	}
+}
+
+@media(max-width: 768px){
+	.port-item{
+		width:100%;
+	}
+
+	.r-text,
+	.l-text{
+		padding: 3em;
+   	    font-size: 1.1em;
+	}
+}
+
+@media(max-width: 600px){
+	.r-text,
+	.l-text{
+		padding: 2em;
+    	font-size: .6em;
+	}
+}
+
+@media(max-width: 330px){
+	.r-text,
+	.l-text{
+    	font-size: .5em;
+	}
+}
 
 /*Contact*/
 
