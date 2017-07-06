@@ -132,7 +132,18 @@ nav a:hover {
 @media(max-width: 525px){
 	nav li{
 		margin: 0;
+		padding: 1em;
 	}	
+	.logo{
+		height: 9em;
+	}
+}
+
+@media(max-width: 403px){
+	nav li{
+		font-size: 1em;
+		padding: .5em;
+	}
 }
 
 /*Home*/
@@ -193,8 +204,35 @@ nav a:hover {
 }
 
 @media(max-width: 525px){
-	
+	.home .container{
+		padding: 2em;
+	}
+
+	.home h1{
+		margin: .5em;
+	}
+
+	.home .button {
+    border-color: #000;
+    color: #DDD;
+    background-color: rgba(51, 51, 51, 0.97);
+	}
 }
+
+@media(max-width: 420px){
+	.home .container{
+		background-color: transparent;
+		margin-top: 4em;
+	}
+	.title{
+		font-size: 2.5rem;
+	}
+	.button{
+		padding: 0.3em .5em;
+	}
+}
+
+
 
 
 
@@ -287,8 +325,11 @@ nav a:hover {
 	.icons img {
      padding: 0; 
      background-color: transparent; 
-     border-radius: 0; 
+     border-radius: 0;
+ 	}
+
 }
+
 
 @media(max-width: 700px){
 	.about{
@@ -304,6 +345,14 @@ nav a:hover {
 		order: 2;
 		width: 50%;
 	}
+}
+
+@media(max-width: 360px){
+	.about-sidebox{
+		width:100%;
+		flex: none;
+	}
+}
 		
 
 /*Portfolio*/
