@@ -416,17 +416,15 @@ nav a:hover {
 	background-color: rgba(25, 25, 25, 0.8);
 	-webkit-clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
 	clip-path: polygon(0 0, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0 100%);
-	transform: translateX(-100%);
+	/*transform: translateX(-100%);*/
 }
 
 .port-desc-l img{
     position: absolute;
     transform: rotate(90deg);
-    
-	right: 5.5%;
-    bottom: 29%;
-
-    width: 53%;
+    right: 14.5%;
+    bottom: 27%;
+    width: 38%;
     max-width: 100%;
 }
 
