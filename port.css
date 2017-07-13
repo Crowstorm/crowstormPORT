@@ -238,6 +238,14 @@ nav a:hover {
 	}
 }
 
+@media (max-width: 320px){
+	.home .container {
+    background-color: transparent;
+    margin-top: 1em;
+	}
+}
+
+
 
 
 
@@ -284,6 +292,15 @@ nav a:hover {
 	margin-top: 25em;
     margin-bottom: 3.5em;
     color: whitesmoke;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+h2, h3, h4{
+	color: #dedede;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 
