@@ -294,11 +294,13 @@ nav a:hover {
     color: whitesmoke;
 }
 
-h1{
+.about h1{
 	text-transform: uppercase;
 }
 
-h2, h3, h4{
+.about h2, 
+.about h3, 
+.about h4{
 	color: #dedede;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -625,7 +627,7 @@ h2, h3, h4{
 	.r-text,
 	.l-text{
 		padding: 2em;
-    	font-size: .6em;
+    	font-size: .5em;
 	}
 	.portfolio h1{
 		padding: .5em;
