@@ -276,7 +276,8 @@ nav a:hover {
 }
 
 .about-sidebox p{
-	padding: 1em;
+	color: #dedede;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .about-mainbox{
@@ -315,9 +316,8 @@ nav a:hover {
 	height: 6em;
 	width: 40%;
 	padding: 1em;
-
-
-    background-color: rgba(14, 14, 14, 0.63);
+   /* background-color: rgba(14, 14, 14, 0.63);*/
+   background-color: rgba(119, 119, 128, .65);
     border-radius: 30px;
 
 }
