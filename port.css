@@ -811,6 +811,9 @@ nav a:hover {
 	.mail p{
 		font-size: .25em;
 	}
+	.contact{
+		height: 100%;
+	}
 }
 
 @media(max-width: 414px){
